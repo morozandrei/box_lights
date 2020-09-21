@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Box Traffic Lights</title>
+    <style>
+        body {
+            border-left: 3px ridge rgb(255, 208, 0);
+            border-top: 1px solid rgb(255, 208, 0);
+            padding: 8px;
+            width: 140px;
+        }
+        #light {
+            width: 100px;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        /* here the common properties for '.red' '.yellow' '.green' classes */
+        #light .red, .yellow, .green {
+            height: 100px;
+            border-top: 10px solid black;
+            border-radius: 100px;
+            margin-bottom: 15px;
+        }
+        #light .red {
+            background-color: red;
+        }    
+        #light .yellow {
+            background-color: yellow;
+        }
+        #light .green {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="light">
+        <div class="red"></div>
+        <div class="yellow"></div>
+        <div class="green"></div>
+    </div>
+    
+</body>
+</html>
